@@ -5,6 +5,7 @@ subtitle:   "Getting down to business!"
 date:       2015-09-05 00:10:00
 author:     "Spencer Melnick"
 header-img: "img/crane_wallpaper.jpeg"
+comments:   true
 ---
 
 <p>Hey all! If you're reading this post you likely have found this blog via my own referral. Here I'll try and keep updated posts about my various programming projects, experiences, and other things I'm working on.</p>

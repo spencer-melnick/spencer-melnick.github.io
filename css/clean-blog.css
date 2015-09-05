@@ -395,3 +395,6 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+#disqus_thread {
+  padding: 0px 22.5%;
+}
