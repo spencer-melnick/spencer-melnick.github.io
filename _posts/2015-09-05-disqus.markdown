@@ -10,4 +10,4 @@ comments:   true
 
 I'm currently home for labor day weekend, so I've added Disqus comments to all of the blog posts.
 
-While I'm home I'm going to try and get some work done on my [alchemy-game](https://github.com/spencer-melnick/alchemy-game>alchemy-game) project, but I may run into some issues because I have classwork to finish, and I forgot to commit my latest changes at my main workstation (oops).
+While I'm home I'm going to try and get some work done on my [alchemy-game](https://github.com/spencer-melnick/alchemy-game) project, but I may run into some issues because I have classwork to finish, and I forgot to commit my latest changes at my main workstation (oops).
