@@ -2,4 +2,9 @@
 {
     /* Color palette */
     --primary-bg: #05668D;
+    --bg-2: #028090;
+    --bg-3: #00A896;
+    --bg-4: #02C39A;
+    --accent: #F0F3BD;
+    --med-dark-text: #464646;
 }

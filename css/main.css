@@ -2,13 +2,16 @@
 
 *
 {
-    /* Default text */
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-
     /* Zero margins to fit other containers inside */
     margin: 0px;
     padding: 0px;
+}
+
+html
+{
+    /* Default text */
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
 .header
@@ -33,10 +36,20 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
-    backdrop-filter: blur(0.2rem);
-    -webkit-backdrop-filter: blur(0.2rem);
+    backdrop-filter: blur(0.5rem);
+    -webkit-backdrop-filter: blur(0.5rem);
+
+    color: var(--med-dark-text);
 
     padding: 2rem 20%;
+}
+
+.projectbox
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .imageblock h1
@@ -55,4 +68,13 @@
 {
     list-style-position: inside;
     padding: 1rem;
+}
+
+.breaker
+{
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: center;
+    background-color: var(--bg-2);
 }
