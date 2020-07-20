@@ -44,12 +44,46 @@ html
     padding: 2rem 20%;
 }
 
+.colorbox
+{
+    background-color: var(--bg-3);
+    padding: 2rem 20%;
+    text-align: center;
+}
+
+.colorbox h1
+{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.colorbox a
+{
+    font-size: 10rem;
+}
+
+a
+{
+    color: white;
+}
+
+a:link, a:visited, a:hover, a:active
+{
+    color: inherit;
+}
+
+.padbox
+{
+    padding: 2rem 0;
+}
+
 .projectbox
 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .imageblock h1
@@ -73,7 +107,7 @@ html
 .breaker
 {
     padding: 1rem;
-    background-color: var(--bg-2);
+    background-color: var(--bg-color);
 
     font-size: 1.5rem;
     font-weight: normal;
@@ -100,4 +134,11 @@ html
     text-align: center;
     font-size: 1.5rem;
     padding-top: 2rem;
+}
+
+.copyright
+{
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-bg);
 }
