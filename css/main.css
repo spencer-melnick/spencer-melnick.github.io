@@ -1,0 +1,58 @@
+@import "colorpalette.css";
+
+*
+{
+    /* Default text */
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+
+    /* Zero margins to fit other containers inside */
+    margin: 0px;
+    padding: 0px;
+}
+
+.header
+{
+    background-color: var(--primary-bg);
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.subtitle
+{
+    font-size: 0.6em;
+    display: block;
+}
+
+.imageblock
+{
+    /* Background image with blur to cover scaling artifacts */
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    backdrop-filter: blur(0.2rem);
+    -webkit-backdrop-filter: blur(0.2rem);
+
+    padding: 2rem 20%;
+}
+
+.imageblock h1
+{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.imageblock h2
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.imageblock ul
+{
+    list-style-position: inside;
+    padding: 1rem;
+}
