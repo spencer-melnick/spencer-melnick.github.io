@@ -1,128 +1,44 @@
 @import "colorpalette.css";
 
-*
-{
-    /* Zero margins to fit other containers inside */
-    margin: 0px;
-    padding: 0px;
+* {
+    /* Zero margins and padding by default */
+    margin: 0;
+    padding: 0;
 }
 
-html
-{
+html {
     /* Default text */
     font-family: 'Open Sans', sans-serif;
     color: white;
-}
 
-.header
-{
+    /* Fallback background color */
     background-color: var(--primary-bg);
+}
+
+/* Used for page title */
+h1 {
     font-size: 2rem;
-    padding: 2rem;
     text-align: center;
     font-weight: bolder;
 }
 
-.subtitle
-{
-    font-size: 0.6em;
-    display: block;
-}
-
-.imageblock
-{
-    /* Background image with blur to cover scaling artifacts */
-    background-image: var(--bg-image);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    backdrop-filter: blur(0.5rem);
-    -webkit-backdrop-filter: blur(0.5rem);
-
-    color: var(--med-dark-text);
-
-    padding: 3rem 20%;
-}
-
-.colorbox
-{
-    background-color: var(--bg-color);
-    padding: 0 0 2rem;
+/* Used for page subtitle */
+h2 {
+    font-size: 1.2rem;
     text-align: center;
-}
-
-.colorbox h1
-{
-    font-size: 1.5rem;
-    font-weight: normal;
-}
-
-a
-{
-    color: white;
-}
-
-a:link, a:visited, a:hover, a:active
-{
-    color: inherit;
-}
-
-.padbox
-{
-    padding: 2rem 0;
-}
-
-.projectbox
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.middlebox
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0 20%;
-}
-
-.imageblock h1
-{
-    font-size: 2rem;
-    font-weight: bolder;
-}
-
-.imageblock h2
-{
-    font-size: 1.5rem;
     font-weight: bold;
 }
 
-.imageblock ul
-{
-    list-style-position: inside;
+/* Used for section headers
+   Must be outside of a padbox */
+h3 {
     padding: 1rem;
-}
-
-.horizpad
-{
-    padding: 0 20%
-}
-
-h3
-{
-    padding: 1rem;
-    background-color: var(--bg-color);
 
     font-size: 1.5rem;
     font-weight: normal;
     text-align: center;
 
+    /* Flex box for breaking lines */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -130,8 +46,8 @@ h3
     align-items: center;
 }
 
-h3::before, h3::after
-{
+/* Automatically inserts lines */
+h3::before, h3::after {
     content: "";
     flex-grow: 5;
     height: 0.2rem;
@@ -139,46 +55,106 @@ h3::before, h3::after
     background-color: white;
 }
 
-h4
-{
-    font-size: 1.5rem;
-    font-weight: bold;
+/* Subsection titles */
+h4 {
+    text-align: left;
+    font-size: 1.6rem;
+    padding-top: 1rem;
 }
 
-.bottombox
-{
-    text-align: center;
-    font-size: 1.5rem;
-    padding-top: 2rem;
+/* Subsection subtitles */
+h5 {
+    text-align: left;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
 }
 
-.copyright
-{
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--primary-bg);
+/* Column headings */
+h6 {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
 }
 
-.listbox
-{
+ul {
+    padding-left: 1em;
+}
+
+/* Remove changing link colors */
+a:link, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+/* Big color sections */
+.colorbox {
+    background-color: var(--bg-color);
+}
+
+/* Big image sections */
+.imagebox {
+    /* Background image with blur to cover scaling artifacts */
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(0.5rem);
+    -webkit-backdrop-filter: blur(0.5rem);
+
+    /* Text color to better contrast image */
+    color: var(--med-dark-text);
+}
+
+/* Used for content inside a colorbox or imagebox */
+.padbox {
+    padding: 2rem 2rem;
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+/* Variant of padbox with no top padding */
+.horizpadbox {
+    padding: 0 2rem 2rem;
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+/* Column aligned flex-boxes */
+.widebox, .evenbox {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
+    align-items: top;
 }
 
-.listbox ul
-{
-    display: block;
-    padding-right: 2rem;
-    list-style-position: outside;
-    padding-left: 1rem;
+/* Spaced to the edge of the box */
+.widebox {
+    justify-content: space-between;
 }
 
-.largeicon
-{
+/* Spaced evenly */
+.evenbox {
+    justify-content: space-evenly;
+}
+
+/* Automatically add padding to children */
+.widebox > *, .evenbox > * {
+    margin: 0 1rem;
+}
+
+/* Medium size FA icon */
+.medicon {
+    font-size: 3rem;
+    margin: 1rem 2rem;
+}
+
+/* Large FA icon */
+.largeicon {
     font-size: 10rem;
 }
 
-.medicon
-{
-    font-size: 5rem;
+/* Centers stuff */
+.center {
+    text-align: center;
+}
+
+iframe {
+    padding: 2rem;
 }

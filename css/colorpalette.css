@@ -1,7 +1,8 @@
 :root
 {
     /* Color palette */
-    --primary-bg: #05668D;
+    --primary-bg: var(--bg-1);
+    --bg-1: #05668D;
     --bg-2: #028090;
     --bg-3: #00A896;
     --bg-4: #02C39A;
