@@ -104,7 +104,7 @@ a:link, a:visited, a:hover, a:active {
     -webkit-backdrop-filter: blur(0.5rem);
 
     /* Text color to better contrast image */
-    color: var(--med-dark-text);
+    color: var(--dark-text);
 }
 
 /* Used for content inside a colorbox or imagebox */
