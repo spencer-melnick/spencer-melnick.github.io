@@ -46,7 +46,7 @@ html
 
 .colorbox
 {
-    background-color: var(--bg-3);
+    background-color: var(--bg-color);
     padding: 0 0 2rem;
     text-align: center;
 }
@@ -55,11 +55,6 @@ html
 {
     font-size: 1.5rem;
     font-weight: normal;
-}
-
-.colorbox a
-{
-    font-size: 10rem;
 }
 
 a
@@ -86,7 +81,7 @@ a:link, a:visited, a:hover, a:active
     align-items: center;
 }
 
-.resumebox
+.middlebox
 {
     display: flex;
     flex-direction: row;
@@ -114,7 +109,12 @@ a:link, a:visited, a:hover, a:active
     padding: 1rem;
 }
 
-.breaker, .colorbox h1
+.horizpad
+{
+    padding: 0 20%
+}
+
+h3
 {
     padding: 1rem;
     background-color: var(--bg-color);
@@ -130,13 +130,19 @@ a:link, a:visited, a:hover, a:active
     align-items: center;
 }
 
-.breaker::before, .breaker::after, .colorbox h1::before, .colorbox h1::after
+h3::before, h3::after
 {
     content: "";
     flex-grow: 5;
     height: 0.2rem;
     margin: 0 2rem;
     background-color: white;
+}
+
+h4
+{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .bottombox
@@ -151,4 +157,28 @@ a:link, a:visited, a:hover, a:active
     text-align: center;
     padding: 1rem;
     background-color: var(--primary-bg);
+}
+
+.listbox
+{
+    display: flex;
+    flex-flow: row;
+}
+
+.listbox ul
+{
+    display: block;
+    padding-right: 2rem;
+    list-style-position: outside;
+    padding-left: 1rem;
+}
+
+.largeicon
+{
+    font-size: 10rem;
+}
+
+.medicon
+{
+    font-size: 5rem;
 }
