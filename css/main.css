@@ -13,6 +13,8 @@ html {
 
     /* Fallback background color */
     background-color: var(--primary-bg);
+
+    scroll-behavior: smooth;
 }
 
 /* Used for page title */
@@ -181,4 +183,14 @@ p {
     height: 10rem;
     margin-top: 2rem;
     flex: initial;
+}
+
+/* Section links in the header */
+.sectionlink {
+    padding: 1rem 1rem 0;
+
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
 }
