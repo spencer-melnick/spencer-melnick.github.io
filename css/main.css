@@ -155,6 +155,12 @@ a:link, a:visited, a:hover, a:active {
     text-align: center;
 }
 
+/* Youtube embed padding */
 iframe {
     padding: 2rem;
+}
+
+/* Paragraph line breaks */
+p {
+    padding-bottom: 1rem;
 }
