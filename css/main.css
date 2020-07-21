@@ -138,6 +138,11 @@ a:link, a:visited, a:hover, a:active {
     justify-content: space-evenly;
 }
 
+/* Evenbox children for centering */
+.centeredchild {
+    flex: 1;
+}
+
 /* Automatically add padding to children */
 .widebox > *, .evenbox > * {
     margin: 0 1rem;
@@ -167,4 +172,13 @@ iframe {
 /* Paragraph line breaks */
 p {
     padding-bottom: 1rem;
+}
+
+/* Circular mask on image */
+.circleimage {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin-top: 2rem;
+    flex: initial;
 }
